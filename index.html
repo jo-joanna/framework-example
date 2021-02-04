@@ -4,20 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Carousel for page mountanairs</title>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-light">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+
+  </nav>
     <header>
-        <h1>Bootstrap Example</h1>
+        <h1>Carousel for travelling in the mountains</h1>
     </header>
-    <main>
-        <p>Install boostrap on this page</p>
-    </main>
-    <aside>
-        <p>Sidebar Content</p>
-    </aside>
+
+<!--main body------------------------------>
+    <div class="container-fluid">
+        <div class="row">
+          <main>
+            <h2>New pictures from the tours.</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/mohammad-alizade-zcRgHZF0q1A-unsplash.jpg" class="d-block w-100 h-100" alt="Mohammad">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/simon-english-48nerZQCHgo-unsplash.jpg" class="d-block w-100 h-100" alt="Simon English">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/lucas-wesney-ZNz5UPRb2N8-unsplash.jpg" class="d-block w-100 h-100" alt="Lucas Wesney">
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <div class="row">
+
+                    <div class="col-4">
+                            <h2>Tours date</h2>
+                              <ul>
+                                  <li>2019 - Pireneis</li>
+                                  <li>2020 - Alps</li>
+                                  <li>2021 - Kilimandzaro</li>
+                              </ul>
+                    </div>
+                    <div class="col-8">
+<!--embed video with the control panel-------->
+                      <h2>Video from the Alps tour</h2>
+                      <iframe fluid src="https://www.youtube.com/embed/-hTVNidxg2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+
+        </div>
+    </div>
     <footer>
         <p>&copy; 2020</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </html>
